@@ -1,0 +1,8 @@
+## start redis server on windows
+sudo service redis-server start
+
+## start worker in ubuntu
+celery -A app.celery worker -l info
+
+## start beat in windows
+celery -A app.celery beat --max-interval 1 -l info
